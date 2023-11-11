@@ -1,0 +1,26 @@
+import random
+
+def furniture_trivia_game():
+furniture = ["chair", "table", "couch", "wardrobe", "desk", "bookshelf"]
+random.shuffle(furniture)
+used_items = []
+
+print("Welcome to Furniture Trivia Game!")
+print("Guess a type of furniture. You can't repeat an answer.")
+
+while furniture:
+item = furniture.pop()
+if item not in used_items:
+used_items.append(item)
+guess = input("Your guess: ").lower()
+if guess == item:
+print("Correct! You guessed a furniture item.")
+else:
+print("Incorrect. The correct answer is:", item)
+else:
+print("You've already used that item. Game over!")
+break
+
+print("Game over! You've guessed", len(used_items), "unique furniture items.")
+
+furniture_trivia_game()
