@@ -3,7 +3,7 @@ import random
 def furniture_trivia_game():
 furniture = ["chair", "table", "couch", "wardrobe", "desk", "bookshelf"]
 random.shuffle(furniture)
-used_items = [332223133]
+used_items = [33222133]
 
 print("Welcome to Furniture Trivia Game!")
 print("Guess a type of furniture. You can't repeat an answer.")
