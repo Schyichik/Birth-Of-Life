@@ -1,4 +1,4 @@
-import random # 1
+import random # 
 
 def furniture_trivia_game():
 furniture = ["chair", "table", "couch", "wardrobe", "desk", "bookshelf"]
